@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google!</title>
+    <style>
+      /****************** CONTENT KISMI GENEL(logodan sonra gelen orta kısım)*******************/
+      .content {
+        margin: 0 70px;
+        width: 90%;
+      }
+
+      /**************** CONTENT İÇERİĞİ --> arama yapılan bloğun tasarımı ********************/
+      .search_box {
+        background-color: #eeeeee;
+        width: 100%;
+        float: left;
+        text-align: center;
+        font: 16px "Times New Roman";
+      }
+
+      /*************** CONTENT İÇERİĞİ --> bağlantı linklerinin bulunduğu kısmın tasarımı *******/
+      .box {
+        text-align: center;
+        float: left;
+        min-height: 80px;
+        padding: auto;
+        border-top: 2px solid white;
+        box-sizing: border-box;
+      }
+
+      .clear {
+        clear: both;
+      }
+
+      /**************** FOOTER KISMI ************************************************************/
+      .footer {
+        margin: 0 70px;
+        font: 13px "Times New Roman";
+        text-align: center;
+      }
+
+      /**************** Bağlantıların display blok'a çevrilmesi **********************************/
+      a {
+        display: inline-block;
+      }
+
+      /***************** box in table ***********************************************/
+      table {
+        min-height: 78px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- **************************** GOOGLE LOGO ****************************** -->
+    <img
+      style="display: block; margin: auto"
+      src="image/google.jpg"
+      alt="Google Logo"
+    />
+
+    <div class="content">
+      <!-- ************************ CONTENT SEARCH BOX **************************** -->
+      <div class="search_box">
+        <form action="">
+          <label for="arama">Search the web using Google!</label><br />
+          <input
+            type="search"
+            name="search_text"
+            id="arama"
+            value
+            size="40"
+            style="padding: 1px 2px"
+          /><br />
+          <input type="submit" value="Google Search" style="padding: 1px 6px" />
+          <input
+            type="submit"
+            value="I'm feeling lucky"
+            style="padding: 1px 6px"
+          />
+        </form>
+      </div>
+
+      <!-- ***************************** LEFT BOX ********************************* -->
+      <div
+        class="box"
+        style="
+          background-color: rgb(126, 229, 218);
+          width: 36.33%;
+          font: 16px 'Times New Roman';
+        "
+      >
+        <table>
+          <tr>
+            <td>
+              <p style="margin: 0">Special Searches</p>
+              <a
+                href="https://web.archive.org/web/19990224014327/http://www.google.com/stanford"
+                >Stanford Search</a
+              ><br /><a
+                href="https://web.archive.org/web/19990221231654/http://www.google.com/linux"
+                >Linux Search</a
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- **************************** MIDDLE BOX ********************************* -->
+      <div
+        class="box"
+        style="
+          background-color: rgb(112, 204, 194);
+          width: 19.33%;
+          border-right: 2px solid white;
+          border-left: 2px solid white;
+          font: 13px 'Times New Roman';
+        "
+      >
+        <table>
+          <tr>
+            <td>
+              <a
+                href="https://web.archive.org/web/19990221212930if_/http://www.google.com/help.html"
+                >Help!</a
+              ><br /><a
+                href="https://web.archive.org/web/19990427105230if_/http://www.google.com/about.html"
+                >About Google!</a
+              ><br /><a
+                href="https://web.archive.org/web/19990221202430if_/http://www.google.com/company.html"
+                >Company Info</a
+              ><br /><a
+                href="https://web.archive.org/web/19990224043535if_/http://www.google.com/stickers.html"
+                >Google! Logos</a
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- ***************************** RIGHT BOX ********************************** -->
+      <div
+        class="box"
+        style="background-color: #62b3aa; width: 44.33%; float: left"
+      >
+        <form action="">
+          <label
+            for="mail_text"
+            style="font-size: 13px; font-family: 'Times New Roman'"
+            >Get Google!</label
+          ><br />
+          <label
+            for="mail_text"
+            style="font-size: 13px; font-family: 'Times New Roman'"
+            >Update monthly:</label
+          ><br />
+          <input
+            type="search"
+            name="mail_text"
+            id="mail_text"
+            style="padding: 1px 6px"
+            value="your e-mail"
+          /><br />
+          <input type="button" value="Subscribe" />
+          <a
+            style="
+              display: inline;
+              font-size: 13px;
+              font-family: 'Times New Roman';
+            "
+            href="https://web.archive.org/web/19990116224431/http://www.findmail.com/list/google-friends"
+            >Archive</a
+          >
+        </form>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+    <!-- ********************* FOOTER KISMI **************************** -->
+    <div class="footer"><p>Copyright &copy;1998 Google Inc.</p></div>
+  </body>
+</html>
